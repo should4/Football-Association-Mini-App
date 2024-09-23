@@ -1,0 +1,15 @@
+/* 新闻详情页样式 */
+.news-detail {
+  padding: 20rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.content {
+  font-size: 32rpx;
+  line-height: 48rpx;
+}

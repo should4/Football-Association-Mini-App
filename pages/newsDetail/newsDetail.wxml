@@ -1,0 +1,7 @@
+<!-- 新闻详情页 -->
+<view class="news-detail">
+  <view class="title">新闻标题</view>
+  <view class="content">
+    这是新闻的详细内容，展示具体的新闻信息。
+  </view>
+</view>

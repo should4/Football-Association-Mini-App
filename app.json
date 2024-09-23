@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",          
+    "pages/match/match",         
+    "pages/reservation/reservation", 
+    "pages/newsDetail/newsDetail" 
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",  
+    "navigationBarTextStyle": "black",         
+    "navigationBarTitleText": "哈威足协",     
+    "backgroundColor": "#eeeeee",              
+    "backgroundTextStyle": "light"             
+  },
+  "tabBar": {
+    "color": "#999999",          
+    "selectedColor": "#1cbbb4",    
+    "backgroundColor": "#ffffff",  
+    "borderStyle": "black",        
+    "list": [
+      {
+        "pagePath": "pages/match/match",
+        "text": "比赛",
+        "iconPath": "/images/match.png",         
+        "selectedIconPath": "/images/match_active.png" 
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home_active.png"
+      },
+      {
+        "pagePath": "pages/reservation/reservation",
+        "text": "场地预约",
+        "iconPath": "/images/reservation.png",
+        "selectedIconPath": "/images/reservation_active.png"
+      }
+    ]
+  }
+}

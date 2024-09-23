@@ -1,0 +1,18 @@
+<!-- 比赛页面，包含赛程和积分榜的切换 -->
+<view class="container">
+  <view class="tabs">
+    <button bindtap="switchTab" data-tab="schedule">赛程</button>
+    <button bindtap="switchTab" data-tab="ranking">积分榜</button>
+  </view>
+
+  <!-- 根据选中的tab展示不同内容 -->
+  <view wx:if="{{activeTab === 'schedule'}}">
+    <view class="match">球队A vs 球队B 时间: 2024-09-25</view>
+    <view class="match">球队C vs 球队D 时间: 2024-09-26</view>
+  </view>
+
+  <view wx:if="{{activeTab === 'ranking'}}">
+    <view class="ranking">球队A 积分: 9 胜: 3 平: 0 负: 0</view>
+    <view class="ranking">球队B 积分: 6 胜: 2 平: 0 负: 1</view>
+  </view>
+</view>

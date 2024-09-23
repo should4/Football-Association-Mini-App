@@ -1,0 +1,28 @@
+<!-- 场地预约页面 -->
+<view class="container">
+  <!-- 顶部导览栏，周一至周日，启用 flex 布局 -->
+  <scroll-view scroll-x="true" class="week-scroll" enable-flex="true">
+    <view class="week-item" 
+      wx:for="{{weekDays}}" 
+      wx:key="index" 
+      bindtap="onSelectDay" 
+      data-index="{{index}}" 
+      wx:class="{{selectedDayIndex === index ? 'active' : ''}}" 
+      style="{{index === selectedDayIndex ? 'animation: bounce 0.3s;' : ''}}">
+      {{item}}
+    </view>
+  </scroll-view>
+
+  <!-- 场次展示 -->
+  <view class="slots">
+    <view class="slot" bindtap="onSelectSlot" data-slot="morning" wx:class="{{selectedSlot === 'morning' ? 'selected' : ''}}">
+      上午场
+    </view>
+    <view class="slot" bindtap="onSelectSlot" data-slot="noon" wx:class="{{selectedSlot === 'noon' ? 'selected' : ''}}">
+      中午场
+    </view>
+    <view class="slot" bindtap="onSelectSlot" data-slot="afternoon" wx:class="{{selectedSlot === 'afternoon' ? 'selected' : ''}}">
+      下午场
+    </view>
+  </view>
+</view>

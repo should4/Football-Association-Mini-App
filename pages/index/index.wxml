@@ -1,0 +1,21 @@
+<!-- 首页，包含滑动图片和新闻信息 -->
+<view class="container">
+  <!-- 可滑动的图片展示，autoplay实现自动播放 -->
+  <swiper autoplay="true" interval="3000" duration="500" circular="true" indicator-dots="true">
+    <swiper-item>
+      <image src="/images/slide1.jpg" class="slide-image" mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/slide2.jpg" class="slide-image" mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/slide3.jpg" class="slide-image" mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 新闻列表，点击查看新闻详情 -->
+  <view class="news-list">
+    <navigator url="/pages/newsDetail/newsDetail?id=1">足球联赛开始通知</navigator>
+    <navigator url="/pages/newsDetail/newsDetail?id=2">比赛规则更新通知</navigator>
+  </view>
+</view>

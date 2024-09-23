@@ -1,0 +1,18 @@
+/* 比赛页面样式 */
+.container {
+  padding: 20rpx;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20rpx;
+}
+
+.match, .ranking {
+  padding: 20rpx;
+  background-color: #f5f5f5;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}
